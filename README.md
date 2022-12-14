@@ -2,7 +2,7 @@
 
 `cd server`
 
-then install dependencies
+**install dependencies**
 
 ```bash
 yarn install
@@ -10,7 +10,27 @@ yarn install
 npm install
 ```
 
-then run the server
+**run the server**
+
+```bash
+yarn dev
+
+npm run dev
+```
+
+## Client
+
+`cd client`
+
+**install dependencies**
+
+```bash
+yarn install
+
+npm install
+```
+
+**run the app**
 
 ```bash
 yarn dev

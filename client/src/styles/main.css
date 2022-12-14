@@ -2,3 +2,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    input:checked + .answer__label {
+        @apply text-white bg-indigo-700 border-0;
+    }
+    input:disabled + .answer__label {
+        @apply text-white bg-green-700 border-0;
+    }
+    .circle {
+        transition: stroke-dashoffset 3s ease-in-out;
+    }
+}
+@layer components {
+    .answer__label {
+        @apply inline-flex cursor-pointer p-4 rounded-lg shadow-md border-gray-200 border w-full capitalize font-semibold;
+    }
+    .next__btn {
+        @apply bg-indigo-600 text-white px-6 py-2 rounded-lg disabled:bg-gray-600;
+    }
+    .submit__btn {
+        @apply bg-green-600 text-white px-6 py-2 rounded-lg disabled:bg-gray-600;
+    }
+}
