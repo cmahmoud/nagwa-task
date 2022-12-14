@@ -42,7 +42,7 @@ function QuestionForm(): JSX.Element {
             currentIndex === state.tasks.length - 2;
 
         // if the current question is before last set last task true and change question
-        // else if is last question navigate to rank page
+        // else if is last question send post request to /api/task/rank then navigate to rank page
         // else change question
         if (isQuestionBeforeLast) {
             dispatch(changeQuestion(currentIndex + 1));
